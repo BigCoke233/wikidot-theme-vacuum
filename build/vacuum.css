@@ -3,11 +3,40 @@
  * * 
  * * by Eltrac
  * */
-body {
-  margin: 0;
-  padding: 0;
+/* GLOBAL WIDTH */
+/* HEADER */
+/* TOP MENU */
+/* SIDE MENU */
+/* off-canvas */
+/* side bar mobile query on their own */
+/* CONTENT */
+/* ACTUALLY HIDE HIDDEN TAGS */
+/* YUI-TABS */
+/* FOOTER */
+/* SOME NICE BOXES */
+/* Custom page content classes */
+/* Page Rating Module Customizations */
+/* Has increased specificity to override action-area rate's stylesheet */
+/* Fixes for multi-line page tags */
+/* Standard Image Block */
+/* Collapsible Link */
+/* Wikiwalk Navigation */
+/* Licensebox */
+/* Forum Customizations */
+/* Adding Forum Lines */
+/* Hide Forum Signatures */
+/* Hide Avatar Hover */
+/* Ruby by Nanimono Demonai */
+/* Keycap */
+/* tag style */
+/* Display Black Block by Nanimono Demonai */
+/* Blockquote Mimic Div */
+/* Fix revision list */
+/* Responsive Web Design */
+@media (max-width: 767px) {
+  /* owindow */
+  /* header area and top bar */
 }
-
 /**
  *  File: _layout.sass
  *  ------------
@@ -15,8 +44,6 @@ body {
  *  for vaccum theme
  * **/
 #container {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
-}
-
-/*# sourceMappingURL=vacuum.css.map */
+}/*# sourceMappingURL=vacuum.css.map */
