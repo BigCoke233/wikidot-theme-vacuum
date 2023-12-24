@@ -2,8 +2,72 @@
 //  -----
 //  Basic layout and page placement
 
-$pageWidth: 650px
+@use 'responsive' as *
+@use 'variables' as *
 
-#container
-    max-width: $pageWidth
-    margin: 0 auto
+$rootFontSize: 14px
+$rootLineHeight: 1.25
+
+$pageWidth: 650px
+$pageMargin: 4rem 1rem
+$pagePadding: 0
+
+$cornerBarTop: 0.5rem
+$cornerBarRight: $cornerBarTop
+
+body
+    font-size: $rootFontSize
+    line-height: $rootLineHeight
+    font-family: 'Noto Sans SC', sans-serif
+    background-color: $bg-color
+    overflow-x: hidden
+
+#container-wrap-wrap
+    position: static
+
+    #container-wrap
+        max-width: $pageWidth
+        margin: 0 auto
+
+        #container
+            margin: $pageMargin
+            padding: $pagePadding
+
+            //Page Header
+            #header
+                display: flex
+                flex-flow: column wrap
+                align-content: space-between
+                height: (1rem + 2rem) * 1.5
+
+                //page title and menu
+                h1, h2, #top-bar
+                    width: 50%
+
+                h1
+                    font-size: 1.5rem
+                h2 
+                    font-size: 0.9rem
+
+                #top-bar
+                    text-align: right
+
+                    //responsive top-bar display
+                    .mobile-top-bar ul
+                        @include md
+                            display: none
+                    .top-bar ul
+                        display: none
+                        @include md
+                            display: flex
+
+
+                //bar on left-top corner
+                #login-status
+                    top: $cornerBarTop
+                    right: $cornerBarRight
+                #search-top-box
+                    position: absolute
+                    top: $cornerBarTop + 2rem
+                    right: $cornerBarRight
+

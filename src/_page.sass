@@ -1,0 +1,93 @@
+//  module: Page
+
+@use 'variables' as *
+
+@mixin common-text()
+    font-family: $font
+    color: $text-color
+    font-size: 0.95rem
+
+@mixin common-block()
+    border: 1px solid transparent
+    margin: 0.5rem 0
+    p, h1, h2, h3, h4, h5, h6, div
+        margin: 1rem
+
+#main-content
+    @include common-text
+    #page-title,
+    #page-content,
+    #page-options-container,
+    h1, h2, h3, h4, h5, h6, p
+        @include common-text
+
+    #page-title
+        text-align: center
+        border: none
+        font-size: 1.5rem
+        font-weight: 700
+        margin: 0.5rem 0
+
+    #page-content
+
+        h1, h2, h3, h4, h5, h6
+            font-weight: 500
+            margin: 0.5rem 0
+
+        h1
+            font-size: 1.5rem
+            position: relative
+            left: -1.5rem
+            &::before 
+                content: '+'
+                margin-right: 0.5rem
+                color: $gray-text-color
+
+        hr 
+            background-color: transparent
+            height: auto
+            border-top: 2px dashed $border-color
+            margin: 1rem 0
+
+        img
+            max-width: 100%
+
+        & > img, & > div.styled-img > img
+            display: block
+            margin: 0 auto
+            border-radius: $radius
+            
+
+        code, .code
+            background-color: $gray-bg-color
+            border: none
+
+        blockquote, .blockquote
+            padding-left: 1.5rem 
+            position: relative
+            p, strong, em, div
+                color: $dimmed-text-color
+            &::before
+                content: '>'
+                color: $gray-text-color
+                font-weight: 700
+                position: absolute
+                left: 0
+
+        .borderblock
+            @include common-block
+            border: 1px solid $border-color
+            border-radius: $sm-radius
+        
+        .lightblock
+            @include common-block
+            background-color: $gray-bg-color
+        
+        .darkblock
+            @include common-block
+            background-color: $text-color
+            p 
+                color: $bg-color
+
+    #page-options-container
+        margin: 1rem 0

@@ -3,6 +3,8 @@
 //  Clear all wikidot preset style
 //  Code from scp basalt theme
 
+@use 'variables' as *
+
 #content-wrap 
 	position: unset
 	margin: unset
@@ -1064,22 +1066,19 @@ div.curved
 	-webkit-text-emphasis-style: unset
 
 ::-webkit-scrollbar 
-	width: unset /* for vertical scrollbars */
-	height: unset /* for horizontal scrollbars */
+	width: 0.5rem /* for vertical scrollbars */
+	height: 0.5rem /* for horizontal scrollbars */
 	border: unset
 
 
 ::-webkit-scrollbar-track 
 	background: unset
 
-
 ::-webkit-scrollbar-thumb 
-	background: unset
-
+	background: $gray-bg-color
 
 .page-source 
 	word-break: unset
-
 
 /* Responsive Web Design */
 img, embed, video, object, iframe, table 

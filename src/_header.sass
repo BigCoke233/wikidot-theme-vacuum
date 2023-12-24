@@ -1,0 +1,22 @@
+//  module: Header
+//
+//  Styles of page header
+
+@use 'responsive' as *
+
+#header
+
+    @include md
+        #top-bar
+            display: flex
+            flex-flow: row nowrap
+            justify-content: flex-end
+
+            .top-bar > ul
+                height: 100%
+                display: flex
+                justify-content: center
+                gap: 0.5rem
+                & > li
+                    display: inline-flex
+                    align-items: center
