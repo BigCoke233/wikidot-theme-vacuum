@@ -8,4 +8,15 @@ body {
   padding: 0;
 }
 
+/**
+ *  File: _layout.sass
+ *  ------------
+ *  basic layout stylesheet
+ *  for vaccum theme
+ * **/
+#container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=vacuum.css.map */
