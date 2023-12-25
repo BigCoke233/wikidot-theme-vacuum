@@ -19,12 +19,15 @@ body
 
     #container-wrap
         #container
+            display: flex
+            flex-flow: row wrap
+
             #content-wrap
-                max-width: $pageWidth
-                margin: 0 auto
+                width: 100%
 
                 #main-content
-                    margin: $pageMargin
+                    max-width: $pageWidth
+                    margin: 0 auto
                     padding: $pagePadding
 
                     #page-options-container

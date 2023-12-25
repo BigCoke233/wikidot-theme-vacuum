@@ -1,28 +1,29 @@
 //  module: Footer
 
 @use 'variables' as *
+@use 'responsive' as *
 
 @mixin common-footer()
+    padding: 1rem
     color: $gray-text-color
+    font-size: $font-size-sm
     text-align: center
-    justify-content: flex-end
-    gap: 0.15rem
-    display: flex!important // !important is necessary
-                            // because dumb wikidot has set a style attr declaring it as block
 
 #footer 
     @include common-footer()
-    font-size: $font-size-xs
-    border-top: 1px solid $border-color
+    @include md
+        text-align: left
     padding-top: 0.5rem
     .options
         margin-right: auto
 
 #license-area
     @include common-footer()
-    font-size: $font-size-sm
+    @include md
+        text-align: right
+    margin-left: auto
     a
-        margin-left: auto
+        display: block
         background-color: $gray-bg-color
         padding: 0 0.15rem
         border-radius: $sm-radius

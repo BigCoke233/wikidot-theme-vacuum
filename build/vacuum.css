@@ -1209,13 +1209,17 @@ body {
 #container-wrap-wrap {
   position: static;
 }
+#container-wrap-wrap #container-wrap #container {
+  display: flex;
+  flex-flow: row wrap;
+}
 #container-wrap-wrap #container-wrap #container #content-wrap {
-  max-width: 700px;
-  margin: 0 auto;
+  width: 100%;
 }
 #container-wrap-wrap #container-wrap #container #content-wrap #main-content {
-  margin: 4rem 1rem;
-  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
 }
 #container-wrap-wrap #container-wrap #container #content-wrap #main-content #page-options-container {
   margin: 1rem 0;
@@ -1553,29 +1557,35 @@ body {
 }
 
 #footer {
+  padding: 1rem;
   color: rgb(161, 161, 170);
+  font-size: 0.8rem;
   text-align: center;
-  justify-content: flex-end;
-  gap: 0.15rem;
-  display: flex !important;
-  font-size: 0.65rem;
-  border-top: 1px solid rgb(228, 228, 231);
   padding-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  #footer {
+    text-align: left;
+  }
 }
 #footer .options {
   margin-right: auto;
 }
 
 #license-area {
+  padding: 1rem;
   color: rgb(161, 161, 170);
-  text-align: center;
-  justify-content: flex-end;
-  gap: 0.15rem;
-  display: flex !important;
   font-size: 0.8rem;
+  text-align: center;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  #license-area {
+    text-align: right;
+  }
 }
 #license-area a {
-  margin-left: auto;
+  display: block;
   background-color: rgb(237, 237, 241);
   padding: 0 0.15rem;
   border-radius: 0.15rem;
