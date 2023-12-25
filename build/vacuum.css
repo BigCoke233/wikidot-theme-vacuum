@@ -1465,6 +1465,29 @@ body {
 #main-content #page-options-container .page-watch-options {
   color: rgb(161, 161, 170);
 }
+#main-content #page-options-container #page-options-bottom-2 {
+  justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  #main-content #page-options-container #page-options-bottom-2 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    opacity: 1 !important;
+    font-size: 0.8rem;
+    background-color: rgb(249, 250, 251);
+    border: 1px solid rgb(228, 228, 231);
+    width: 22.5rem;
+    position: absolute;
+    left: calc((100vw - 650px) / 2 + 650px - 22.5rem);
+    height: unset;
+    margin: 0;
+    line-height: unset;
+  }
+  #main-content #page-options-container #page-options-bottom-2 a.btn {
+    display: block;
+    text-align: center;
+  }
+}
 #main-content #action-area {
   width: auto;
   background-color: rgb(237, 237, 241);
