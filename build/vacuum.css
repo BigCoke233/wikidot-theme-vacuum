@@ -489,7 +489,6 @@ sup {
   }
   #top-bar .open-menu a:hover {
     text-decoration: unset;
-    -webkit-box-shadow: unset;
     box-shadow: unset;
   }
   #side-bar {
@@ -503,8 +502,6 @@ sup {
     overflow-y: unset;
     z-index: unset;
     padding: unset;
-    -webkit-transition: unset;
-    -o-transition: unset;
     transition: unset;
   }
   #side-bar::after {
@@ -852,8 +849,6 @@ div.page-rate-widget-box .rate-points {
   font-weight: unset;
   opacity: unset;
   color: unset;
-  -webkit-transition: unset;
-  -moz-transition: unset;
   transition: unset;
 }
 
@@ -916,8 +911,6 @@ div.page-rate-widget-box .rate-points {
   border: unset;
   border-color: unset;
   border-bottom-width: unset;
-  -moz-border-radius: unset;
-  -webkit-border-radius: unset;
   border-radius: unset;
   background-color: unset;
   padding: unset;
@@ -937,11 +930,7 @@ div.page-rate-widget-box .rate-points {
   background: unset;
   color: unset;
   text-decoration: unset;
-  -moz-border-radius-bottomright: unset;
-  -webkit-border-bottom-right-radius: unset;
   border-bottom-right-radius: unset;
-  -moz-border-radius-topright: unset;
-  -webkit-border-top-right-radius: unset;
   border-top-right-radius: unset;
 }
 
@@ -967,12 +956,8 @@ div.page-rate-widget-box .rate-points {
   float: unset;
   width: unset;
   height: unset;
-  -moz-border-radius: unset;
-  -webkit-border-radius: unset;
   border-radius: unset;
   background: unset;
-  -moz-box-shadow: unset;
-  -webkit-box-shadow: unset;
   box-shadow: unset;
 }
 
@@ -1093,8 +1078,6 @@ img, embed, video, object, iframe, table {
     max-width: unset;
     margin: unset;
     padding: unset;
-    -webkit-transition: unset;
-    -o-transition: unset;
     transition: unset;
   }
   span, a {
@@ -1386,6 +1369,4 @@ body {
 
 #footer {
   text-align: center;
-}
-
-/*# sourceMappingURL=vacuum.css.map */
+}/*# sourceMappingURL=vacuum.css.map */
