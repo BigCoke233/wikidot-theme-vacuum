@@ -9,7 +9,7 @@
   --theme-base: "standalone";
   --theme-id: "vacuum";
   --theme-name: "Theme Vacuum";
-  --logo-image: url("https://arandintday.github.io/thebackhubscn/logo.svg");
+  --logo-image: url("https://uploadfile.wdfiles.com/local--files/others/backroom%E9%BE%992");
   --header-title: "The Backrooms";
   --header-subtitle: "你曾经来过这里";
 }
@@ -1215,46 +1215,6 @@ body {
   margin: 4rem 1rem;
   padding: 0;
 }
-#container-wrap-wrap #container-wrap #container #header {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: space-between;
-  height: 4.5rem;
-}
-#container-wrap-wrap #container-wrap #container #header h1, #container-wrap-wrap #container-wrap #container #header h2, #container-wrap-wrap #container-wrap #container #header #top-bar {
-  width: 50%;
-}
-#container-wrap-wrap #container-wrap #container #header h1 {
-  font-size: 1.5rem;
-}
-#container-wrap-wrap #container-wrap #container #header h2 {
-  font-size: 0.95rem;
-}
-#container-wrap-wrap #container-wrap #container #header #top-bar {
-  text-align: right;
-}
-@media screen and (min-width: 768px) {
-  #container-wrap-wrap #container-wrap #container #header #top-bar .mobile-top-bar ul {
-    display: none;
-  }
-}
-#container-wrap-wrap #container-wrap #container #header #top-bar .top-bar ul {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  #container-wrap-wrap #container-wrap #container #header #top-bar .top-bar ul {
-    display: flex;
-  }
-}
-#container-wrap-wrap #container-wrap #container #header #login-status {
-  top: 0.5rem;
-  right: 0.5rem;
-}
-#container-wrap-wrap #container-wrap #container #header #search-top-box {
-  position: absolute;
-  top: 2.5rem;
-  right: 0.5rem;
-}
 #container-wrap-wrap #container-wrap #container #main-content #page-options-container {
   margin: 1rem 0;
   display: flex;
@@ -1287,13 +1247,67 @@ body {
   display: none;
 }
 
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.2rem;
+  height: 4.5rem;
+  padding: 0 1.5rem;
+  font-size: 0.95rem;
+}
 #header::before {
-  content: "";
-  background-image: var(--logo-image);
+  order: 0;
+  content: var(--logo-image);
   background-size: cover;
-  height: 3rem;
-  width: 3rem;
-  filter: invert(1);
+  max-height: 3.5rem;
+  min-width: 3.5rem;
+}
+#header h1 {
+  order: 1;
+  font-size: 1.5rem;
+}
+#header h2 {
+  display: none;
+}
+#header #top-bar {
+  order: 2;
+  margin-left: auto;
+  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  #header #top-bar .mobile-top-bar ul {
+    display: none;
+  }
+}
+#header #top-bar .top-bar ul {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  #header #top-bar .top-bar ul {
+    display: flex;
+  }
+}
+#header #search-top-box {
+  order: 3;
+}
+#header #search-top-box #search-top-box-input {
+  display: none;
+}
+#header #login-status {
+  order: 4;
+  position: static;
+  display: inline-flex;
+}
+#header #login-status .printuser, #header #login-status > * {
+  font-size: 0;
+}
+#header #login-status #account-topbutton {
+  font-size: 0.8rem;
 }
 @media screen and (min-width: 768px) {
   #header #top-bar {

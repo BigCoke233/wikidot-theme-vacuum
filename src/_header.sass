@@ -3,16 +3,73 @@
 //  Styles of page header
 
 @use 'responsive' as *
+@use 'variables' as *
+
+$logo-size: 3.5rem
 
 #header
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
 
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    gap: 0.2rem
+
+    height: (1rem + 2rem) * 1.5
+    padding: 0 1.5rem
+    font-size: $font-size-nm
+
+    //icon or logo
     &::before
-        content: ''
-        background-image: var(--logo-image)
+        order: 0
+        content: var(--logo-image)
         background-size: cover
-        height: 3rem
-        width: 3rem
-        filter: invert(1) //render white image into black one
+        max-height: $logo-size
+        min-width: $logo-size
+
+    //header title
+    h1
+        order: 1
+        font-size: $font-size-lg
+    h2 
+        display: none //cancel subtitle
+
+    //navigation
+    #top-bar
+        order: 2
+        margin-left: auto
+        text-align: right
+
+        //responsive top-bar display
+        .mobile-top-bar ul
+            @include md
+                display: none
+        .top-bar ul
+            display: none
+            @include md
+                display: flex
+
+    //search
+    #search-top-box
+        order: 3
+        #search-top-box-input
+            display: none
+
+    //login
+    #login-status
+        order: 4
+        position: static
+        display: inline-flex
+
+        .printuser,
+        & > *
+            font-size: 0
+        #account-topbutton
+            font-size: $font-size-sm
+            
 
     @include md
         #top-bar

@@ -25,44 +25,6 @@ body
             margin: $pageMargin
             padding: $pagePadding
 
-            //Page Header
-            #header
-                display: flex
-                flex-flow: column wrap
-                align-content: space-between
-                height: (1rem + 2rem) * 1.5
-
-                //page title and menu
-                h1, h2, #top-bar
-                    width: 50%
-
-                h1
-                    font-size: $font-size-lg
-                h2 
-                    font-size: $font-size-nm
-
-                #top-bar
-                    text-align: right
-
-                    //responsive top-bar display
-                    .mobile-top-bar ul
-                        @include md
-                            display: none
-                    .top-bar ul
-                        display: none
-                        @include md
-                            display: flex
-
-
-                //bar on left-top corner
-                #login-status
-                    top: $cornerBarTop
-                    right: $cornerBarRight
-                #search-top-box
-                    position: absolute
-                    top: $cornerBarTop + 2rem
-                    right: $cornerBarRight
-
             #main-content
                 #page-options-container
                     margin: 1rem 0
