@@ -1362,6 +1362,18 @@ body {
 #main-content #page-content img {
   max-width: 100%;
 }
+#main-content #page-content .scp-image-block img {
+  border-radius: 0.15rem;
+}
+#main-content #page-content .scp-image-block.block-right {
+  float: right;
+  text-align: center;
+}
+#main-content #page-content .scp-image-block .scp-image-caption > p {
+  color: rgb(113, 113, 122);
+  font-size: 0.8rem;
+  line-height: 2;
+}
 #main-content #page-content > img, #main-content #page-content > div.styled-img > img {
   display: block;
   margin: 0 auto;
@@ -1372,6 +1384,9 @@ body {
   border: none;
 }
 #main-content #page-content blockquote, #main-content #page-content .blockquote {
+  border: none;
+  background-color: transparent;
+  margin: 0;
   padding-left: 1.5rem;
   position: relative;
 }

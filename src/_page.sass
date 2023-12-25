@@ -59,6 +59,19 @@
         img
             max-width: 100%
 
+        .scp-image-block
+            img
+                border-radius: $sm-radius
+
+            &.block-right
+                float: right
+                text-align: center
+            
+            .scp-image-caption > p
+                color: $dimmed-text-color
+                font-size: $font-size-sm
+                line-height: 2
+
         & > img, & > div.styled-img > img
             display: block
             margin: 0 auto
@@ -70,6 +83,9 @@
             border: none
 
         blockquote, .blockquote
+            border: none
+            background-color: transparent
+            margin: 0
             padding-left: 1.5rem 
             position: relative
             p, strong, em, div
