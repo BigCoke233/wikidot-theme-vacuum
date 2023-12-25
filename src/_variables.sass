@@ -6,38 +6,52 @@
     --theme-name: "Theme Vacuum"
     --logo-image: url("https://uploadfile.wdfiles.com/local--files/others/backroom%E9%BE%992")
     --header-title: "The Backrooms"
-    --header-subtitle: "你曾经来过这里"
     
 // *Sass Variables
 
-$pageWidth: 650px
+//page layout
+$pageWidth: 700px
 $pageMargin: 4rem 1rem
 $pagePadding: 0
     
-$rootFontSize: 14px
+//paragraph
+$rootFontSize: 17px
 $rootLineHeight: 1.25
-    
+
+//text colors
 $text-color: rgb(63 63 70)
 $dimmed-text-color: rgb(113 113 122)
 $gray-text-color: rgb(161 161 170)
 
+//background colors
 $bg-color: rgb(249 250 251)
 $gray-bg-color: rgb(237 237 241)
 $darkgray-bg-color: rgb(212 212 216)
 $border-color: rgb(228 228 231)
 $block-bg-color: $gray-bg-color
 
+//border radius value
 $sm-radius: 0.15rem
 $radius: 0.25rem
 
+//font
 $font: 'Noto Sans SC', sans-serif
 
+//font sizes
 $font-size-xs: 0.65rem  //extra small
 $font-size-sm: 0.8rem   //small
 $font-size-nm: 0.95rem  //normal
 $font-size-md: 1.2rem   //medium
 $font-size-lg: 1.5rem   //large
 $font-size-xl: 1.75rem  //extra large
+
+//icons, partially from basalt theme
+$search-icon-mask: url('https://bigcoke233.github.io/wikidot-theme-vacuum/images/search.svg')
+$modal-close-mask: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMjI4LjAxIDE2OC44MS01OS4xOTkgNTkuMTk5IDE0OCAxNDcuOTktMTQ4IDE0OCA1OS4xOTkgNTkuMTk1IDE0Ny45OS0xNDcuOTkgMTQ4IDE0Ny45OSA1OS4xOTUtNTkuMTk1LTE0Ny45OS0xNDggMTQ3Ljk5LTE0Ny45OS01OS4xOTUtNTkuMTk5LTE0OCAxNDh6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg==')
+$vote-cancel-mask: url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 779.53 779.53'%3E%3Ctitle%3Ecancel-vote%3C/title%3E%3Cpolygon points='779.53 665.37 503.93 389.77 779.53 114.17 665.37 0 389.77 275.6 114.17 0 0 114.17 275.6 389.77 0 665.37 114.17 779.53 389.77 503.93 665.37 779.53 779.53 665.37'/%3E%3C/svg%3E")
+$vote-plus-mask: url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 872.37 872.37'%3E%3Ctitle%3Eplus%3C/title%3E%3Cpolygon points='872.37 341.18 531.2 341.18 531.2 0 341.18 0 341.18 341.18 0 341.18 0 531.2 341.18 531.2 341.18 872.37 531.2 872.37 531.2 531.2 872.37 531.2 872.37 341.18'/%3E%3C/svg%3E")
+$vote-minus-mask: url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 872.37 190.02'%3E%3Ctitle%3Eminus%3C/title%3E%3Crect x='444.99' y='103.81' width='190.02' height='872.37' transform='translate(-103.81 635.01) rotate(-90)'/%3E%3C/svg%3E")
+$vote-info-mask: url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 432.1 810.25'%3E%3Ctitle%3Einfo-vote%3C/title%3E%3Cpath d='M324,917.73v-139H491.5V493.71H346V355.77H615v423H756.05v139ZM544.41,266.88q-36.17,0-57.76-21.46T465,187.18q0-36.78,21.61-58.24t57.76-21.46q36.15,0,57.76,21.46t21.6,58.24q0,36.78-21.6,58.24T544.41,266.88Z' transform='translate(-323.95 -107.48)'/%3E%3C/svg%3E")
 
 // *Reusable Mixins
 
@@ -50,3 +64,13 @@ $font-size-xl: 1.75rem  //extra large
     &:hover
             background-color: $text-color
             color: $bg-color
+    
+@mixin icon-mask($mask, $size: 1rem)
+    mask-image: $mask
+    mask-position: 50%
+    mask-size: contain
+    mask-repeat: no-repeat
+    font-size: 0
+    height: $size
+    width: $size
+    background-color: $text-color

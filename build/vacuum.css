@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * * Vacuum CSS
  * * 
@@ -11,7 +10,10 @@
   --theme-name: "Theme Vacuum";
   --logo-image: url("https://uploadfile.wdfiles.com/local--files/others/backroom%E9%BE%992");
   --header-title: "The Backrooms";
-  --header-subtitle: "你曾经来过这里";
+}
+
+html {
+  font-size: 17px;
 }
 
 #content-wrap {
@@ -113,7 +115,7 @@ a.newpage {
 
 body {
   background-color: unset;
-  font-size: 14px;
+  font-size: unset;
   color: unset;
 }
 
@@ -1208,7 +1210,7 @@ body {
   position: static;
 }
 #container-wrap-wrap #container-wrap {
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto;
 }
 #container-wrap-wrap #container-wrap #container {
@@ -1297,6 +1299,20 @@ body {
 }
 #header #search-top-box #search-top-box-input {
   display: none;
+}
+#header #search-top-box input.button {
+  -webkit-mask-image: url("https://bigcoke233.github.io/wikidot-theme-vacuum/images/search.svg");
+          mask-image: url("https://bigcoke233.github.io/wikidot-theme-vacuum/images/search.svg");
+  -webkit-mask-position: 50%;
+          mask-position: 50%;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  font-size: 0;
+  height: 1rem;
+  width: 1rem;
+  background-color: rgb(63, 63, 70);
 }
 #header #login-status {
   order: 4;
@@ -1492,7 +1508,7 @@ body {
     border: 1px solid rgb(228, 228, 231);
     width: 22.5rem;
     position: absolute;
-    left: calc((100vw - 650px) / 2 + 650px - 22.5rem);
+    left: calc((100vw - 700px) / 2 + 700px - 22.5rem);
     height: unset;
     margin: 0;
     line-height: unset;
