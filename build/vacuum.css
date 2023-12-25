@@ -14,10 +14,6 @@
   --header-subtitle: "你曾经来过这里";
 }
 
-html {
-  width: 100vw;
-}
-
 #content-wrap {
   position: unset;
   margin: unset;
@@ -1441,6 +1437,13 @@ body {
 }
 #main-content #page-options-container .page-watch-options {
   color: rgb(161, 161, 170);
+}
+#main-content #action-area {
+  width: auto;
+  background-color: rgb(237, 237, 241);
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+  margin: 1rem 0;
 }
 
 #footer {
