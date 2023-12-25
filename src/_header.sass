@@ -6,6 +6,14 @@
 
 #header
 
+    &::before
+        content: ''
+        background-image: var(--logo-image)
+        background-size: cover
+        height: 3rem
+        width: 3rem
+        filter: invert(1) //render white image into black one
+
     @include md
         #top-bar
             display: flex

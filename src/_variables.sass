@@ -1,12 +1,48 @@
+// *Global CSS Variables
+
+:root 
+    --theme-base: "standalone"
+    --theme-id: "vacuum"
+    --theme-name: "Theme Vacuum"
+    --logo-image: url("https://arandintday.github.io/thebackhubscn/logo.svg")
+    --header-title: "The Backrooms"
+    --header-subtitle: "你曾经来过这里"
+    
+// *Sass Variables
+    
+$rootFontSize: 14px
+$rootLineHeight: 1.25
+    
 $text-color: rgb(63 63 70)
 $dimmed-text-color: rgb(113 113 122)
 $gray-text-color: rgb(161 161 170)
 
 $bg-color: rgb(249 250 251)
-$gray-bg-color: rgb(244 244 245)
+$gray-bg-color: rgb(237 237 241)
+$darkgray-bg-color: rgb(212 212 216)
 $border-color: rgb(228 228 231)
+$block-bg-color: $gray-bg-color
 
 $sm-radius: 0.15rem
 $radius: 0.25rem
 
 $font: 'Noto Sans SC', sans-serif
+
+$font-size-xs: 0.65rem  //extra small
+$font-size-sm: 0.8rem   //small
+$font-size-nm: 0.95rem  //normal
+$font-size-md: 1.2rem   //medium
+$font-size-lg: 1.5rem   //large
+$font-size-xl: 1.75rem  //extra large
+
+// *Reusable Mixins
+
+@mixin transition()
+    transition-property: color background box-shadow filter opacity
+    transition-duration: 0.25s
+
+@mixin button-transition()
+    @include transition()
+    &:hover
+            background-color: $text-color
+            color: $bg-color

@@ -5,9 +5,6 @@
 @use 'responsive' as *
 @use 'variables' as *
 
-$rootFontSize: 14px
-$rootLineHeight: 1.25
-
 $pageWidth: 650px
 $pageMargin: 4rem 1rem
 $pagePadding: 0
@@ -16,7 +13,6 @@ $cornerBarTop: 0.5rem
 $cornerBarRight: $cornerBarTop
 
 body
-    font-size: $rootFontSize
     line-height: $rootLineHeight
     font-family: 'Noto Sans SC', sans-serif
     background-color: $bg-color
@@ -45,9 +41,9 @@ body
                     width: 50%
 
                 h1
-                    font-size: 1.5rem
+                    font-size: $font-size-lg
                 h2 
-                    font-size: 0.9rem
+                    font-size: $font-size-nm
 
                 #top-bar
                     text-align: right
@@ -70,4 +66,32 @@ body
                     position: absolute
                     top: $cornerBarTop + 2rem
                     right: $cornerBarRight
+
+            #main-content
+                    #page-options-container
+                        margin: 1rem 0
+                        display: flex
+                        flex-flow: row wrap
+                        row-gap: 0.5rem
+                        align-items: flex-end
+
+                        .page-options-bottom 
+                            order: 0
+                            display: flex
+                            justify-content: space-between
+                            flex-wrap: wrap
+                            width: 100%
+                        
+                        #page-info,
+                        .page-watch-options
+                            margin: 0
+                            width: 50%
+
+                        #page-info
+                            order: 1
+                            align-self: flex-start
+                            text-align: left
+
+                        .page-watch-options
+                            order: 2
 

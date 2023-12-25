@@ -1,9 +1,23 @@
+@charset "UTF-8";
 /**
  * * Vacuum CSS
  * * 
  * * by Eltrac
  * */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --theme-base: "standalone";
+  --theme-id: "vacuum";
+  --theme-name: "Theme Vacuum";
+  --logo-image: url("https://arandintday.github.io/thebackhubscn/logo.svg");
+  --header-title: "The Backrooms";
+  --header-subtitle: "你曾经来过这里";
+}
+
+html {
+  width: 100vw;
+}
+
 #content-wrap {
   position: unset;
   margin: unset;
@@ -103,7 +117,7 @@ a.newpage {
 
 body {
   background-color: unset;
-  font-size: unset;
+  font-size: 14px;
   color: unset;
 }
 
@@ -1053,7 +1067,7 @@ div.curved {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(244, 244, 245);
+  background: rgb(212, 212, 216);
 }
 
 .page-source {
@@ -1188,7 +1202,6 @@ iframe.scpnet-interwiki-frame {
 }
 
 body {
-  font-size: 14px;
   line-height: 1.25;
   font-family: "Noto Sans SC", sans-serif;
   background-color: rgb(249, 250, 251);
@@ -1219,7 +1232,7 @@ body {
   font-size: 1.5rem;
 }
 #container-wrap-wrap #container-wrap #container #header h2 {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 #container-wrap-wrap #container-wrap #container #header #top-bar {
   text-align: right;
@@ -1246,11 +1259,46 @@ body {
   top: 2.5rem;
   right: 0.5rem;
 }
+#container-wrap-wrap #container-wrap #container #main-content #page-options-container {
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 0.5rem;
+  align-items: flex-end;
+}
+#container-wrap-wrap #container-wrap #container #main-content #page-options-container .page-options-bottom {
+  order: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#container-wrap-wrap #container-wrap #container #main-content #page-options-container #page-info,
+#container-wrap-wrap #container-wrap #container #main-content #page-options-container .page-watch-options {
+  margin: 0;
+  width: 50%;
+}
+#container-wrap-wrap #container-wrap #container #main-content #page-options-container #page-info {
+  order: 1;
+  align-self: flex-start;
+  text-align: left;
+}
+#container-wrap-wrap #container-wrap #container #main-content #page-options-container .page-watch-options {
+  order: 2;
+}
 
 #side-bar {
   display: none;
 }
 
+#header::before {
+  content: "";
+  background-image: var(--logo-image);
+  background-size: cover;
+  height: 3rem;
+  width: 3rem;
+  filter: invert(1);
+}
 @media screen and (min-width: 768px) {
   #header #top-bar {
     display: flex;
@@ -1287,13 +1335,11 @@ body {
   border: none;
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0.5rem 0;
-}
-#main-content #page-content h1, #main-content #page-content h2, #main-content #page-content h3, #main-content #page-content h4, #main-content #page-content h5, #main-content #page-content h6 {
-  font-weight: 500;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
 }
 #main-content #page-content h1 {
+  font-weight: 600;
+  margin: 0.9rem 0;
   font-size: 1.5rem;
   position: relative;
   left: -1.5rem;
@@ -1302,6 +1348,13 @@ body {
   content: "+";
   margin-right: 0.5rem;
   color: rgb(161, 161, 170);
+}
+#main-content #page-content h2, #main-content #page-content h3, #main-content #page-content h4, #main-content #page-content h5, #main-content #page-content h6 {
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+#main-content #page-content h2 {
+  font-size: 1.2rem;
 }
 #main-content #page-content hr {
   background-color: transparent;
@@ -1318,7 +1371,7 @@ body {
   border-radius: 0.25rem;
 }
 #main-content #page-content code, #main-content #page-content .code {
-  background-color: rgb(244, 244, 245);
+  background-color: rgb(237, 237, 241);
   border: none;
 }
 #main-content #page-content blockquote, #main-content #page-content .blockquote {
@@ -1347,7 +1400,7 @@ body {
 #main-content #page-content .lightblock {
   border: 1px solid transparent;
   margin: 0.5rem 0;
-  background-color: rgb(244, 244, 245);
+  background-color: rgb(237, 237, 241);
 }
 #main-content #page-content .lightblock p, #main-content #page-content .lightblock h1, #main-content #page-content .lightblock h2, #main-content #page-content .lightblock h3, #main-content #page-content .lightblock h4, #main-content #page-content .lightblock h5, #main-content #page-content .lightblock h6, #main-content #page-content .lightblock div {
   margin: 1rem;
@@ -1363,10 +1416,64 @@ body {
 #main-content #page-content .darkblock p {
   color: rgb(249, 250, 251);
 }
-#main-content #page-options-container {
-  margin: 1rem 0;
+#main-content #page-options-container .page-options-bottom a.btn {
+  display: block;
+  background-color: rgb(237, 237, 241);
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.15rem;
+  transition-property: color background box-shadow filter opacity;
+  transition-duration: 0.25s;
+}
+#main-content #page-options-container .page-options-bottom a.btn:hover {
+  background-color: rgb(63, 63, 70);
+  color: rgb(249, 250, 251);
+}
+#main-content #page-options-container #page-info,
+#main-content #page-options-container .page-watch-options {
+  font-size: 0.8rem;
+}
+#main-content #page-options-container #page-info {
+  color: rgb(161, 161, 170);
+}
+#main-content #page-options-container #page-info span {
+  display: block !important;
+  color: rgb(63, 63, 70);
+}
+#main-content #page-options-container .page-watch-options {
+  color: rgb(161, 161, 170);
 }
 
 #footer {
+  color: rgb(161, 161, 170);
   text-align: center;
+  justify-content: flex-end;
+  gap: 0.15rem;
+  display: flex !important;
+  font-size: 0.65rem;
+  border-top: 1px solid rgb(228, 228, 231);
+  padding-top: 0.5rem;
+}
+#footer .options {
+  margin-right: auto;
+}
+
+#license-area {
+  color: rgb(161, 161, 170);
+  text-align: center;
+  justify-content: flex-end;
+  gap: 0.15rem;
+  display: flex !important;
+  font-size: 0.8rem;
+}
+#license-area a {
+  margin-left: auto;
+  background-color: rgb(237, 237, 241);
+  padding: 0 0.15rem;
+  border-radius: 0.15rem;
+  transition-property: color background box-shadow filter opacity;
+  transition-duration: 0.25s;
+}
+#license-area a:hover {
+  background-color: rgb(63, 63, 70);
+  color: rgb(249, 250, 251);
 }/*# sourceMappingURL=vacuum.css.map */

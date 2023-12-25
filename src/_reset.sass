@@ -5,6 +5,9 @@
 
 @use 'variables' as *
 
+html
+	width: 100vw
+
 #content-wrap 
 	position: unset
 	margin: unset
@@ -104,7 +107,7 @@ a.newpage
 
 body 
 	background-color: unset
-	font-size: unset
+	font-size: $rootFontSize
 	color: unset
 
 
@@ -1075,7 +1078,7 @@ div.curved
 	background: unset
 
 ::-webkit-scrollbar-thumb 
-	background: $gray-bg-color
+	background: $darkgray-bg-color
 
 .page-source 
 	word-break: unset
