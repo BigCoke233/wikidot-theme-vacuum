@@ -1262,7 +1262,7 @@ body {
   row-gap: 0.5rem;
   align-items: flex-end;
 }
-#container-wrap-wrap #container-wrap #container #main-content #page-options-container .page-options-bottom {
+#container-wrap-wrap #container-wrap #container #main-content #page-options-container #page-options-bottom {
   order: 0;
   display: flex;
   justify-content: space-between;
@@ -1403,7 +1403,7 @@ body {
 #main-content #page-content .borderblock {
   border: 1px solid transparent;
   margin: 0.5rem 0;
-  border: 1px solid rgb(228, 228, 231);
+  border-color: rgb(228, 228, 231);
   border-radius: 0.15rem;
 }
 #main-content #page-content .borderblock p, #main-content #page-content .borderblock h1, #main-content #page-content .borderblock h2, #main-content #page-content .borderblock h3, #main-content #page-content .borderblock h4, #main-content #page-content .borderblock h5, #main-content #page-content .borderblock h6, #main-content #page-content .borderblock div {
@@ -1427,6 +1427,17 @@ body {
 }
 #main-content #page-content .darkblock p {
   color: rgb(249, 250, 251);
+}
+#main-content #page-content .jotting {
+  border: 1px solid transparent;
+  margin: 0.5rem 0;
+  border: 2px dashed rgb(228, 228, 231);
+}
+#main-content #page-content .jotting p, #main-content #page-content .jotting h1, #main-content #page-content .jotting h2, #main-content #page-content .jotting h3, #main-content #page-content .jotting h4, #main-content #page-content .jotting h5, #main-content #page-content .jotting h6, #main-content #page-content .jotting div {
+  margin: 1rem;
+}
+#main-content #page-content .jotting.colored-div {
+  background-color: rgb(237, 237, 241);
 }
 #main-content #page-options-container .page-options-bottom a.btn {
   display: block;

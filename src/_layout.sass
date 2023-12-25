@@ -68,30 +68,30 @@ body
                     right: $cornerBarRight
 
             #main-content
-                    #page-options-container
-                        margin: 1rem 0
+                #page-options-container
+                    margin: 1rem 0
+                    display: flex
+                    flex-flow: row wrap
+                    row-gap: 0.5rem
+                    align-items: flex-end
+
+                    #page-options-bottom 
+                        order: 0
                         display: flex
-                        flex-flow: row wrap
-                        row-gap: 0.5rem
-                        align-items: flex-end
-
-                        .page-options-bottom 
-                            order: 0
-                            display: flex
-                            justify-content: space-between
-                            flex-wrap: wrap
-                            width: 100%
+                        justify-content: space-between
+                        flex-wrap: wrap
+                        width: 100%
                         
-                        #page-info,
-                        .page-watch-options
-                            margin: 0
-                            width: 50%
+                    #page-info,
+                    .page-watch-options
+                        margin: 0
+                        width: 50%
 
-                        #page-info
-                            order: 1
-                            align-self: flex-start
-                            text-align: left
+                    #page-info
+                        order: 1
+                        align-self: flex-start
+                        text-align: left
 
-                        .page-watch-options
-                            order: 2
+                    .page-watch-options
+                        order: 2
 
