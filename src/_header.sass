@@ -63,15 +63,22 @@ $logo-size: 3.5rem
     //login
     #login-status
         order: 4
-        position: static
-        display: inline-flex
+        position: relative
 
-        .printuser,
-        & > *
-            font-size: 0
+        height: 100%
+        width: 1rem
+        margin-left: 1rem
+
+        font-size: 0
+
         #account-topbutton
-            font-size: $font-size-sm
-            
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            opacity: 0
+
 
     @include md
         #top-bar
