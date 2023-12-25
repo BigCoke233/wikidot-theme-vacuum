@@ -1227,9 +1227,13 @@ body {
 #container-wrap-wrap #container-wrap #container #main-content #page-options-container #page-options-bottom {
   order: 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #container-wrap-wrap #container-wrap #container #main-content #page-options-container #page-options-bottom {
+    justify-content: space-between;
+  }
 }
 #container-wrap-wrap #container-wrap #container #main-content #page-options-container #page-info,
 #container-wrap-wrap #container-wrap #container #main-content #page-options-container .page-watch-options {
@@ -1501,41 +1505,44 @@ body {
   color: rgb(161, 161, 170);
 }
 #main-content #page-options-container #page-options-bottom-2 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: flex-start;
+  font-size: 0.8rem;
+  background-color: rgb(249, 250, 251);
+  border: 1px solid rgb(228, 228, 231);
+  box-shadow: 0.075rem 0.1rem 0.3rem rgba(0, 0, 0, 0.075);
+  width: 100%;
+  height: unset;
+  line-height: unset;
+  padding: 0.25rem;
+}
+#main-content #page-options-container #page-options-bottom-2 a.btn {
+  display: block;
+  text-align: center;
+}
+#main-content #page-options-container #page-options-bottom-2 #rename-move-button,
+#main-content #page-options-container #page-options-bottom-2 #delete-button {
+  grid-column-start: span 2;
+}
+#main-content #page-options-container #page-options-bottom-2 #delete-button {
+  color: rgb(159, 18, 57);
+  transition-property: color background box-shadow filter opacity;
+  transition-duration: 0.25s;
+}
+#main-content #page-options-container #page-options-bottom-2 #delete-button:hover {
+  background-color: rgb(159, 18, 57);
+  color: rgb(249, 250, 251);
 }
 @media screen and (min-width: 768px) {
   #main-content #page-options-container #page-options-bottom-2 {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 0.8rem;
-    background-color: rgb(249, 250, 251);
-    border: 1px solid rgb(228, 228, 231);
-    box-shadow: 0.075rem 0.1rem 0.3rem rgba(0, 0, 0, 0.075);
     width: 22.5rem;
-    height: unset;
-    line-height: unset;
-    padding: 0.25rem;
     position: absolute;
     left: calc((100vw - 700px) / 2 + 700px - 22.5rem - 1.5rem);
     margin-bottom: -2.5rem;
-    display: grid !important;
   }
-  #main-content #page-options-container #page-options-bottom-2 a.btn {
-    display: block;
-    text-align: center;
-  }
-  #main-content #page-options-container #page-options-bottom-2 #rename-move-button,
-  #main-content #page-options-container #page-options-bottom-2 #delete-button {
-    grid-column-start: span 2;
-  }
-  #main-content #page-options-container #page-options-bottom-2 #delete-button {
-    color: rgb(159, 18, 57);
-    transition-property: color background box-shadow filter opacity;
-    transition-duration: 0.25s;
-  }
-  #main-content #page-options-container #page-options-bottom-2 #delete-button:hover {
-    background-color: rgb(159, 18, 57);
-    color: rgb(249, 250, 251);
-  }
+}
+#main-content #page-options-container #page-options-bottom-2:not([style*="display:none"]) {
+  display: grid !important;
 }
 #main-content #action-area {
   width: auto;
