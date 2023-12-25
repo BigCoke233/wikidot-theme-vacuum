@@ -1209,43 +1209,43 @@ body {
 #container-wrap-wrap {
   position: static;
 }
-#container-wrap-wrap #container-wrap {
+#container-wrap-wrap #container-wrap #container #content-wrap {
   max-width: 700px;
   margin: 0 auto;
 }
-#container-wrap-wrap #container-wrap #container {
+#container-wrap-wrap #container-wrap #container #content-wrap #main-content {
   margin: 4rem 1rem;
   padding: 0;
 }
-#container-wrap-wrap #container-wrap #container #main-content #page-options-container {
+#container-wrap-wrap #container-wrap #container #content-wrap #main-content #page-options-container {
   margin: 1rem 0;
   display: flex;
   flex-flow: row wrap;
   row-gap: 0.5rem;
   align-items: flex-end;
 }
-#container-wrap-wrap #container-wrap #container #main-content #page-options-container #page-options-bottom {
+#container-wrap-wrap #container-wrap #container #content-wrap #main-content #page-options-container #page-options-bottom {
   order: 0;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  #container-wrap-wrap #container-wrap #container #main-content #page-options-container #page-options-bottom {
+  #container-wrap-wrap #container-wrap #container #content-wrap #main-content #page-options-container #page-options-bottom {
     justify-content: space-between;
   }
 }
-#container-wrap-wrap #container-wrap #container #main-content #page-options-container #page-info,
-#container-wrap-wrap #container-wrap #container #main-content #page-options-container .page-watch-options {
+#container-wrap-wrap #container-wrap #container #content-wrap #main-content #page-options-container #page-info,
+#container-wrap-wrap #container-wrap #container #content-wrap #main-content #page-options-container .page-watch-options {
   margin: 0;
   width: 50%;
 }
-#container-wrap-wrap #container-wrap #container #main-content #page-options-container #page-info {
+#container-wrap-wrap #container-wrap #container #content-wrap #main-content #page-options-container #page-info {
   order: 1;
   align-self: flex-start;
   text-align: left;
 }
-#container-wrap-wrap #container-wrap #container #main-content #page-options-container .page-watch-options {
+#container-wrap-wrap #container-wrap #container #content-wrap #main-content #page-options-container .page-watch-options {
   order: 2;
 }
 

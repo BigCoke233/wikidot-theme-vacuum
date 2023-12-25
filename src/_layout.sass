@@ -18,39 +18,39 @@ body
     position: static
 
     #container-wrap
-        max-width: $pageWidth
-        margin: 0 auto
-
         #container
-            margin: $pageMargin
-            padding: $pagePadding
+            #content-wrap
+                max-width: $pageWidth
+                margin: 0 auto
 
-            #main-content
-                #page-options-container
-                    margin: 1rem 0
-                    display: flex
-                    flex-flow: row wrap
-                    row-gap: 0.5rem
-                    align-items: flex-end
+                #main-content
+                    margin: $pageMargin
+                    padding: $pagePadding
 
-                    #page-options-bottom 
-                        order: 0
+                    #page-options-container
+                        margin: 1rem 0
                         display: flex
-                        @include md
-                            justify-content: space-between
-                        flex-wrap: wrap
-                        width: 100%
-                        
-                    #page-info,
-                    .page-watch-options
-                        margin: 0
-                        width: 50%
+                        flex-flow: row wrap
+                        row-gap: 0.5rem
+                        align-items: flex-end
 
-                    #page-info
-                        order: 1
-                        align-self: flex-start
-                        text-align: left
+                        #page-options-bottom 
+                            order: 0
+                            display: flex
+                            @include md
+                                justify-content: space-between
+                            flex-wrap: wrap
+                            width: 100%
+                            
+                        #page-info,
+                        .page-watch-options
+                            margin: 0
+                            width: 50%
 
-                    .page-watch-options
-                        order: 2
+                        #page-info
+                            order: 1
+                            align-self: flex-start
+                            text-align: left
 
+                        .page-watch-options
+                            order: 2
