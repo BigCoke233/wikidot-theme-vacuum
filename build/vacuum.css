@@ -1385,13 +1385,6 @@ body {
   font-weight: 600;
   margin: 0.9rem 0;
   font-size: 1.5rem;
-  position: relative;
-  left: -1.5rem;
-}
-#main-content #page-content h1::before {
-  content: "+";
-  margin-right: 0.5rem;
-  color: rgb(161, 161, 170);
 }
 #main-content #page-content h2, #main-content #page-content h3, #main-content #page-content h4, #main-content #page-content h5, #main-content #page-content h6 {
   font-weight: 500;
