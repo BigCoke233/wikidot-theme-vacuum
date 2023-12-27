@@ -12,6 +12,10 @@
   --header-title: "The Backrooms";
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 17px;
 }
