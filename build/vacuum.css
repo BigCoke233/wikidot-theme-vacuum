@@ -3,7 +3,6 @@
  * * 
  * * by Eltrac
  * */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --theme-base: "standalone";
   --theme-id: "vacuum";
@@ -1193,7 +1192,6 @@ iframe.scpnet-interwiki-frame {
 
 body {
   line-height: 1.25;
-  font-family: "Noto Sans SC", sans-serif;
   background-color: rgb(249, 250, 251);
   overflow-x: hidden;
 }
@@ -1354,7 +1352,6 @@ body {
 
 #main-content {
   line-height: 1.75;
-  font-family: "Noto Sans SC", sans-serif;
   color: rgb(63, 63, 70);
   font-size: 0.95rem;
 }
@@ -1362,7 +1359,6 @@ body {
 #main-content #page-content,
 #main-content #page-options-container,
 #main-content h1, #main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6, #main-content p {
-  font-family: "Noto Sans SC", sans-serif;
   color: rgb(63, 63, 70);
   font-size: 0.95rem;
 }
