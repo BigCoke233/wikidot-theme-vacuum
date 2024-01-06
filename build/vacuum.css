@@ -1373,104 +1373,6 @@ body {
   font-weight: 700;
   margin: 0.75rem 0;
 }
-#main-content #page-content h1 {
-  font-weight: 600;
-  margin: 0.9rem 0;
-  font-size: 1.5rem;
-}
-#main-content #page-content h2, #main-content #page-content h3, #main-content #page-content h4, #main-content #page-content h5, #main-content #page-content h6 {
-  font-weight: 500;
-  margin: 0.5rem 0;
-}
-#main-content #page-content h2 {
-  font-size: 1.2rem;
-}
-#main-content #page-content hr {
-  background-color: transparent;
-  height: auto;
-  border-top: 2px dashed rgb(228, 228, 231);
-  margin: 1rem 0;
-}
-#main-content #page-content img {
-  max-width: 100%;
-}
-#main-content #page-content .scp-image-block img {
-  border-radius: 0.15rem;
-}
-#main-content #page-content .scp-image-block.block-right {
-  float: right;
-  text-align: center;
-}
-#main-content #page-content .scp-image-block .scp-image-caption > p {
-  color: rgb(113, 113, 122);
-  font-size: 0.8rem;
-  line-height: 2;
-}
-#main-content #page-content > img, #main-content #page-content > div.styled-img > img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 0.25rem;
-}
-#main-content #page-content code, #main-content #page-content .code {
-  background-color: rgb(237, 237, 241);
-  border: none;
-}
-#main-content #page-content blockquote, #main-content #page-content .blockquote {
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  padding-left: 1.5rem;
-  position: relative;
-}
-#main-content #page-content blockquote p, #main-content #page-content blockquote strong, #main-content #page-content blockquote em, #main-content #page-content blockquote div, #main-content #page-content .blockquote p, #main-content #page-content .blockquote strong, #main-content #page-content .blockquote em, #main-content #page-content .blockquote div {
-  color: rgb(113, 113, 122);
-}
-#main-content #page-content blockquote::before, #main-content #page-content .blockquote::before {
-  content: ">";
-  color: rgb(161, 161, 170);
-  font-weight: 700;
-  position: absolute;
-  left: 0;
-}
-#main-content #page-content .borderblock {
-  border: 1px solid transparent;
-  margin: 0.5rem 0;
-  border-color: rgb(228, 228, 231);
-  border-radius: 0.15rem;
-}
-#main-content #page-content .borderblock p, #main-content #page-content .borderblock h1, #main-content #page-content .borderblock h2, #main-content #page-content .borderblock h3, #main-content #page-content .borderblock h4, #main-content #page-content .borderblock h5, #main-content #page-content .borderblock h6, #main-content #page-content .borderblock div {
-  margin: 1rem;
-}
-#main-content #page-content .lightblock {
-  border: 1px solid transparent;
-  margin: 0.5rem 0;
-  background-color: rgb(237, 237, 241);
-}
-#main-content #page-content .lightblock p, #main-content #page-content .lightblock h1, #main-content #page-content .lightblock h2, #main-content #page-content .lightblock h3, #main-content #page-content .lightblock h4, #main-content #page-content .lightblock h5, #main-content #page-content .lightblock h6, #main-content #page-content .lightblock div {
-  margin: 1rem;
-}
-#main-content #page-content .darkblock {
-  border: 1px solid transparent;
-  margin: 0.5rem 0;
-  background-color: rgb(63, 63, 70);
-}
-#main-content #page-content .darkblock p, #main-content #page-content .darkblock h1, #main-content #page-content .darkblock h2, #main-content #page-content .darkblock h3, #main-content #page-content .darkblock h4, #main-content #page-content .darkblock h5, #main-content #page-content .darkblock h6, #main-content #page-content .darkblock div {
-  margin: 1rem;
-}
-#main-content #page-content .darkblock p {
-  color: rgb(249, 250, 251);
-}
-#main-content #page-content .jotting {
-  border: 1px solid transparent;
-  margin: 0.5rem 0;
-  border: 2px dashed rgb(228, 228, 231);
-}
-#main-content #page-content .jotting p, #main-content #page-content .jotting h1, #main-content #page-content .jotting h2, #main-content #page-content .jotting h3, #main-content #page-content .jotting h4, #main-content #page-content .jotting h5, #main-content #page-content .jotting h6, #main-content #page-content .jotting div {
-  margin: 1rem;
-}
-#main-content #page-content .jotting.colored-div {
-  background-color: rgb(237, 237, 241);
-}
 #main-content #page-options-container .page-options-bottom a.btn {
   display: block;
   background-color: rgb(237, 237, 241);
@@ -1543,6 +1445,105 @@ body {
   border-radius: 0.25rem;
   padding: 1.5rem;
   margin: 1rem 0;
+}
+
+#page-content h1 {
+  font-weight: 600;
+  margin: 0.9rem 0;
+  font-size: 1.5rem;
+}
+#page-content h2, #page-content h3, #page-content h4, #page-content h5, #page-content h6 {
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+#page-content h2 {
+  font-size: 1.2rem;
+}
+#page-content hr {
+  background-color: transparent;
+  height: auto;
+  border-top: 2px dashed rgb(228, 228, 231);
+  margin: 1rem 0;
+}
+#page-content img {
+  max-width: 100%;
+}
+#page-content .scp-image-block img {
+  border-radius: 0.15rem;
+}
+#page-content .scp-image-block.block-right {
+  float: right;
+  text-align: center;
+}
+#page-content .scp-image-block .scp-image-caption > p {
+  color: rgb(113, 113, 122);
+  font-size: 0.8rem;
+  line-height: 2;
+}
+#page-content > img, #page-content > div.styled-img > img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.25rem;
+}
+#page-content code, #page-content .code {
+  background-color: rgb(237, 237, 241);
+  border: none;
+}
+#page-content blockquote, #page-content .blockquote {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+#page-content blockquote p, #page-content blockquote strong, #page-content blockquote em, #page-content blockquote div, #page-content .blockquote p, #page-content .blockquote strong, #page-content .blockquote em, #page-content .blockquote div {
+  color: rgb(113, 113, 122);
+}
+#page-content blockquote::before, #page-content .blockquote::before {
+  content: ">";
+  color: rgb(161, 161, 170);
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+}
+#page-content .borderblock {
+  border: 1px solid transparent;
+  margin: 0.5rem 0;
+  border-color: rgb(228, 228, 231);
+  border-radius: 0.15rem;
+}
+#page-content .borderblock p, #page-content .borderblock h1, #page-content .borderblock h2, #page-content .borderblock h3, #page-content .borderblock h4, #page-content .borderblock h5, #page-content .borderblock h6, #page-content .borderblock div {
+  margin: 1rem;
+}
+#page-content .lightblock {
+  border: 1px solid transparent;
+  margin: 0.5rem 0;
+  background-color: rgb(237, 237, 241);
+}
+#page-content .lightblock p, #page-content .lightblock h1, #page-content .lightblock h2, #page-content .lightblock h3, #page-content .lightblock h4, #page-content .lightblock h5, #page-content .lightblock h6, #page-content .lightblock div {
+  margin: 1rem;
+}
+#page-content .darkblock {
+  border: 1px solid transparent;
+  margin: 0.5rem 0;
+  background-color: rgb(63, 63, 70);
+}
+#page-content .darkblock p, #page-content .darkblock h1, #page-content .darkblock h2, #page-content .darkblock h3, #page-content .darkblock h4, #page-content .darkblock h5, #page-content .darkblock h6, #page-content .darkblock div {
+  margin: 1rem;
+}
+#page-content .darkblock p {
+  color: rgb(249, 250, 251);
+}
+#page-content .jotting {
+  border: 1px solid transparent;
+  margin: 0.5rem 0;
+  border: 2px dashed rgb(228, 228, 231);
+}
+#page-content .jotting p, #page-content .jotting h1, #page-content .jotting h2, #page-content .jotting h3, #page-content .jotting h4, #page-content .jotting h5, #page-content .jotting h6, #page-content .jotting div {
+  margin: 1rem;
+}
+#page-content .jotting.colored-div {
+  background-color: rgb(237, 237, 241);
 }
 
 #footer {
