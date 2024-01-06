@@ -1493,18 +1493,10 @@ body {
   border: none;
   background-color: transparent;
   margin: 0;
-  padding-left: 1.5rem;
-  position: relative;
+  padding: 0.25rem 1rem;
 }
 #page-content blockquote p, #page-content blockquote strong, #page-content blockquote em, #page-content blockquote div, #page-content .blockquote p, #page-content .blockquote strong, #page-content .blockquote em, #page-content .blockquote div {
   color: rgb(113, 113, 122);
-}
-#page-content blockquote::before, #page-content .blockquote::before {
-  content: ">";
-  color: rgb(161, 161, 170);
-  font-weight: 700;
-  position: absolute;
-  left: 0;
 }
 #page-content .borderblock {
   border: 1px solid transparent;

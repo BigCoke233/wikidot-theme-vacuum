@@ -1,7 +1,7 @@
 //  module: Typography
 
-@use 'variables' as *
-@use 'responsive' as *
+@use 'utils/variables' as *
+@use 'utils/responsive' as *
 
 @mixin common-block()
     border: 1px solid transparent
@@ -59,17 +59,10 @@
         border: none
         background-color: transparent
         margin: 0
-        padding-left: 1.5rem 
-        position: relative
+        padding: 0.25rem 1rem
 
         p, strong, em, div
             color: $dimmed-text-color
-        &::before
-            content: '>'
-            color: $gray-text-color
-            font-weight: 700
-            position: absolute
-            left: 0
 
     .borderblock
         @include common-block
