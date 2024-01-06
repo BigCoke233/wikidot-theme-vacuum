@@ -1,5 +1,5 @@
 /**
- * * Vacuum CSS
+ * * Vacuum Core CSS
  * * 
  * * by Eltrac
  * */
@@ -199,6 +199,8 @@ sup {
   color: unset;
   font-size: unset;
   z-index: unset;
+  right: unset;
+  top: unset;
 }
 
 #login-status a {
@@ -1294,15 +1296,15 @@ body {
   text-align: right;
 }
 @media screen and (min-width: 768px) {
-  #header #top-bar .mobile-top-bar ul {
+  #header #top-bar .mobile-top-bar > ul {
     display: none;
   }
 }
-#header #top-bar .top-bar ul {
+#header #top-bar .top-bar > ul {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  #header #top-bar .top-bar ul {
+  #header #top-bar .top-bar > ul {
     display: flex;
   }
 }
@@ -1329,7 +1331,6 @@ body {
 #header #login-status {
   order: 4;
   position: relative;
-  height: 100%;
   width: 1rem;
   margin-left: 1rem;
   font-size: 0;
@@ -1341,6 +1342,7 @@ body {
   left: 0;
   right: 0;
   opacity: 0;
+  z-index: 10;
 }
 @media screen and (min-width: 768px) {
   #header #top-bar {
