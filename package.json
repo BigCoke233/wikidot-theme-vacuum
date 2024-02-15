@@ -1,0 +1,15 @@
+{
+	"source": "src/index.js",
+	"main": "dist/index.js",
+	"devDependencies": {
+		"@parcel/transformer-sass": "2.11.0",
+		"parcel": "^2.11.0"
+	},
+	"scripts": {
+		"dev": "parcel src/index.js",
+		"build": "parcel build dist/index.js"
+	},
+	"dependencies": {
+		"sass": "^1.70.0"
+	}
+}
